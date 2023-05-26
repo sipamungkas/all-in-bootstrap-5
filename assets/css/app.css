@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.nav .nav-link {
+  /* font-size: medium; */
+  font-weight: 600;
+}
+
+.nav .nav-link.active {
+  color: var(--bs-warning);
+}
+
+.disini {
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  outline: none;
+  border-width: 0;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+
+.kami-bantu {
+  color: red;
+  margin-left: 8px;
+}
+
+.slogan {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.divider-vertical {
+  height: 100%;
+  min-height: 40px;
+  width: 2px;
+  background-color: white;
+}

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>All.in Ecommerce</title>
+  <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="/assets/css/headers.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+
+<body>
+  <main>
+    <header class="p-1 p-md-3 mb-3 border-bottom shadow-sm">
+      <div class="container">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <img src="/assets/images/logo-all-in.png" alt="logo all.in" width="auto" height="48" />
+          </a>
+          <!-- start navbar mobile -->
+          <i class="d-flex d-md-none bi bi-list" style="font-size: 2rem;" id="hamburger"></i>
+          <!-- end navbar mobile -->
+
+          <!-- start navbar tablet keatas -->
+          <div class="d-none d-md-flex flex-md-column align-items-end">
+            <div class="input-group w-auto">
+              <input type="text" class="form-control" placeholder="Search" id="search"
+                aria-describedby="inputGroupFileAddon04" aria-label="search" autocomplete="false" dec>
+              <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04"><i
+                  class="bi bi-search"></i></button>
+            </div>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto my-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link me-1 me-lg-4 active">Home</a></li>
+              <li><a href="#" class="nav-link me-1 me-lg-4 link-dark ">Produk</a></li>
+              <li><a href="#" class="nav-link me-1 me-lg-4 link-dark ">Portofolio</a></li>
+              <li><a href="#" class="nav-link me-1 me-lg-4 link-dark ">Tentang Kami</a></li>
+              <li><a href="#" class="nav-link link-dark ">Hubungi Kami</a></li>
+            </ul>
+          </div>
+          <!-- end navbar tablet keatas -->
+
+
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/assets/images/1-01.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="/assets/images/2-01.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/3-01.webp" data-bs-interval="3000" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/4-01.webp" data-bs-interval="3000" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/images/5-01.webp" data-bs-interval="3000" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+    <footer>
+      <div class="align-items-center justify-content-center bg-warning py-1">
+        <h4 class="d-flex text-center align-items-center justify-content-center">
+          TERTARIK CETAK BERSAMA KAMI?
+          <span class="kami-bantu">KAMI BANTU </span>
+          <button class="disini">DISINI</button>
+        </h4>
+      </div>
+      <div class="slogan align-items-center justify-content-center py-2">
+        <h2 class="fs-1">BEST <span class="text-warning">TIME</span></h2>
+        <div class="divider-vertical mx-3"></div>
+        <h2 class="fs-1">BEST <span class="text-warning">PRICE</span></h2>
+        <span class="divider-vertical mx-3"></span>
+        <h2 class="fs-1">BEST <span class="text-warning">QUALITY</span></h2>
+      </div>
+    </footer>
+  </main>
+
+
+  <script src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
