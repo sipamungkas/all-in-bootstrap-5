@@ -25,8 +25,32 @@
             <img src="/assets/images/logo-all-in.png" alt="logo all.in" width="auto" height="48" />
           </a>
           <!-- start navbar mobile -->
-          <i class="d-flex d-md-none bi bi-list" style="font-size: 2rem;" id="hamburger"></i>
+          <i class="d-flex d-md-none bi bi-list" style="font-size: 2rem;" id="hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"></i>
           <!-- end navbar mobile -->
+
+          <!-- start sidebar mobile -->
+         
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <div></div>
+              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                <img src="/assets/images/logo-all-in.png" alt="logo all.in" width="auto" height="48" />
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav d-flex flex-column align-items-center col-12 col-lg-auto me-lg-auto my-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link me-1 me-lg-4 fs-5 active ">Home</a></li>
+                <li><a href="#" class="nav-link me-1 me-lg-4 fs-5 link-dark ">Produk</a></li>
+                <li><a href="#" class="nav-link me-1 me-lg-4 fs-5 link-dark ">Portofolio</a></li>
+                <li><a href="#" class="nav-link me-1 me-lg-4 fs-5 link-dark ">Tentang Kami</a></li>
+                <li><a href="#" class="nav-link link-dark fs-5 ">Hubungi Kami</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end sidebar mobile -->
 
           <!-- start navbar tablet keatas -->
           <div class="d-none d-md-flex flex-md-column align-items-end">
@@ -54,20 +78,20 @@
     <section class="d-flex flex-column mb-0">
       <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner banner-slider-image-container">
-          <div class="carousel-item  active" >
+          <div class="carousel-item  active">
             <img src="/assets/images/1-01.png" class="banner-slider-image" alt="...">
           </div>
-          <div class="carousel-item" >
+          <div class="carousel-item">
             <img src="/assets/images/2-01.webp" class="banner-slider-image" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/3-01.webp"  class="banner-slider-image" alt="...">
+            <img src="/assets/images/3-01.webp" class="banner-slider-image" alt="...">
           </div>
           <div class="carousel-item ">
-            <img src="/assets/images/4-01.webp"  class="banner-slider-image" alt="...">
+            <img src="/assets/images/4-01.webp" class="banner-slider-image" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="/assets/images/5-01.webp"  class="banner-slider-image" alt="...">
+            <img src="/assets/images/5-01.webp" class="banner-slider-image" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home" data-bs-slide="prev">
