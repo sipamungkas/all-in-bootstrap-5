@@ -3,6 +3,79 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --color-primary-orange: #f1a500;
+  --color-primary-black: #333333;
+  --color-primary-red: #fb0000;
+}
+
+.color-primary-orange {
+  color: var(--color-primary-orange);
+}
+.color-primary-black {
+  color: var(--color-primary-black);
+}
+
+.color-primary-red {
+  color: var(--color-primary-red);
+}
+
+.bg-primary-orange {
+  background-color: var(--color-primary-orange);
+}
+
+.bg-primary-black {
+  background-color: var(--color-primary-black);
+}
+
+.bg-primary-red {
+  background-color: var(--color-primary-red);
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
 h1,
 h2,
 h3,
@@ -18,12 +91,15 @@ h6 {
 }
 
 .nav .nav-link.active {
-  color: var(--bs-warning);
+  color: var(--color-primary-orange);
+}
+main {
+  height: 100vh;
 }
 
 .disini {
   background-color: white;
-  color: red;
+  color: var(--color-primary-red);
   font-weight: bold;
   outline: none;
   border-width: 0;
@@ -33,13 +109,13 @@ h6 {
 }
 
 .kami-bantu {
-  color: red;
+  color: var(--color-primary-red);
   margin-left: 8px;
 }
 
 .slogan {
   display: flex;
-  background-color: black;
+  background-color: var(--color-primary-black);
   color: white;
 }
 
@@ -48,4 +124,14 @@ h6 {
   min-height: 40px;
   width: 2px;
   background-color: white;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+  .disini,
+  .kami-bantu {
+    margin-left: 0px;
+  }
 }
