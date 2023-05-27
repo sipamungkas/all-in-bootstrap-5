@@ -10,6 +10,10 @@
   --color-primary-red: #fb0000;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
 .color-primary-orange {
   color: var(--color-primary-orange);
 }
@@ -126,6 +130,13 @@ main {
   background-color: white;
 }
 
+.banner-slider-image {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
 }
 
@@ -133,5 +144,69 @@ main {
   .disini,
   .kami-bantu {
     margin-left: 0px;
+  }
+}
+
+.banner-slider-container {
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.banner-slider-image-container {
+  max-height: 30vh;
+  min-height: 30vh;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .banner-slider-container-sm,
+  .banner-slider-container {
+    max-width: 576px;
+  }
+}
+@media (min-width: 768px) {
+  .banner-slider-container-md,
+  .banner-slider-container-sm,
+  .banner-slider-container {
+    max-width: 768px;
+  }
+
+  .banner-slider-image-container {
+    max-height: 70vh;
+    min-height: 70vh;
+    
+  }
+}
+@media (min-width: 992px) {
+  .banner-slider-container-lg,
+  .banner-slider-container-md,
+  .banner-slider-container-sm,
+  .banner-slider-container {
+    max-width: 992px;
+  }
+  .banner-slider-image-container {
+    max-height: 60vh;
+    min-height: 60vh;
+    
+  }
+}
+@media (min-width: 1200px) {
+  .banner-slider-container-xl,
+  .banner-slider-container-lg,
+  .banner-slider-container-md,
+  .banner-slider-container-sm,
+  .banner-slider-container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1400px) {
+  .banner-slider-container-xxl,
+  .banner-slider-container-xl,
+  .banner-slider-container-lg,
+  .banner-slider-container-md,
+  .banner-slider-container-sm,
+  .banner-slider-container {
+    max-width: 1400px;
   }
 }
