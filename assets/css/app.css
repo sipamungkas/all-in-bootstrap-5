@@ -140,23 +140,17 @@ main {
 @media (min-width: 768px) {
 }
 
-@media (max-width: 767px) {
-  .disini,
-  .kami-bantu {
-    margin-left: 0px;
-  }
-}
-
 .banner-slider-container {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
 }
 
-.banner-slider-image-container {
-  max-height: 30vh;
-  min-height: 30vh;
-  display: flex;
+.banner-slider-image-container img {
+  height: calc((130 / 390) * 100vw);
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (min-width: 576px) {
@@ -165,17 +159,18 @@ main {
     max-width: 576px;
   }
 }
+
+@media (max-width: 767px) {
+  .disini,
+  .kami-bantu {
+    margin-left: 0px;
+  }
+}
 @media (min-width: 768px) {
   .banner-slider-container-md,
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 768px;
-  }
-
-  .banner-slider-image-container {
-    max-height: 70vh;
-    min-height: 70vh;
-    
   }
 }
 @media (min-width: 992px) {
@@ -184,11 +179,6 @@ main {
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 992px;
-  }
-  .banner-slider-image-container {
-    max-height: 60vh;
-    min-height: 60vh;
-    
   }
 }
 @media (min-width: 1200px) {
