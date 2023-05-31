@@ -95,7 +95,7 @@ h6 {
 }
 
 .nav .nav-link.active {
-  color: var(--color-primary-orange);
+  color: var(--color-primary-orange)!important;
 }
 main {
   height: 100vh;
