@@ -153,6 +153,41 @@ main {
   object-position: center;
 }
 
+/* produk css */
+.produk-container {
+  width: calc((390px / 2));
+  height: calc((390px / 2));
+}
+
+.produk-pesan-sekarang:hover {
+  background-color: var(--color-primary-orange);
+}
+
+.produk-pesan-wrapper{
+  position: absolute;
+  bottom: 1rem;
+  padding: 0 0.5rem;
+  left: 0;
+  right: 0;
+}
+.produk-overlay-wrapper {
+  bottom: 35%;
+  padding-bottom: 4px;
+  top: auto;
+  bottom: auto;
+}
+.produk-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  height: auto;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
 @media (min-width: 576px) {
   .banner-slider-container-sm,
   .banner-slider-container {
