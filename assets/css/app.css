@@ -47,7 +47,7 @@
 
 .portofolio-image {
   width: 100%;
-  /* max-height: 180px; */
+  height: 180px;
   object-fit: cover;
   object-position: center;
 }
@@ -216,7 +216,7 @@ main {
 
   .portofolio-image {
     width: 100%;
-    max-height: 160px;
+    height: 160px;
   }
 }
 
@@ -230,7 +230,7 @@ main {
 
   .portofolio-image {
     width: 100%;
-    max-height: 210px;
+    height: 210px;
   }
 }
 @media (min-width: 1200px) {
@@ -254,6 +254,6 @@ main {
 
   .portofolio-image {
     width: 100%;
-    max-height: 287px;
+    height: 287px;
   }
 }
