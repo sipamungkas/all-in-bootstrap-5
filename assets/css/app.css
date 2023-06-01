@@ -201,6 +201,18 @@ main {
   text-align: justify;
 }
 
+.home-icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.all-in-description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+}
+
 @media (min-width: 576px) {
   .banner-slider-container-sm,
   .banner-slider-container {
