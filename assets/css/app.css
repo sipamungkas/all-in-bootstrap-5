@@ -45,10 +45,11 @@
   user-select: none;
 }
 
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+.portofolio-image {
+  width: 100%;
+  /* max-height: 180px; */
+  object-fit: cover;
+  object-position: center;
 }
 
 .b-example-vr {
@@ -95,7 +96,7 @@ h6 {
 }
 
 .nav .nav-link.active {
-  color: var(--color-primary-orange)!important;
+  color: var(--color-primary-orange) !important;
 }
 main {
   height: 100vh;
@@ -163,7 +164,7 @@ main {
   background-color: var(--color-primary-orange);
 }
 
-.produk-pesan-wrapper{
+.produk-pesan-wrapper {
   position: absolute;
   bottom: 1rem;
   padding: 0 0.5rem;
@@ -201,19 +202,35 @@ main {
     margin-left: 0px;
   }
 }
+
 @media (min-width: 768px) {
   .banner-slider-container-md,
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 768px;
   }
+
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+  .portofolio-image {
+    width: 100%;
+    max-height: 160px;
+  }
 }
+
 @media (min-width: 992px) {
   .banner-slider-container-lg,
   .banner-slider-container-md,
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 992px;
+  }
+
+  .portofolio-image {
+    width: 100%;
+    max-height: 210px;
   }
 }
 @media (min-width: 1200px) {
@@ -233,5 +250,10 @@ main {
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 1400px;
+  }
+
+  .portofolio-image {
+    width: 100%;
+    max-height: 287px;
   }
 }
