@@ -189,6 +189,18 @@ main {
   padding-bottom: 4px;
 }
 
+/* hubungi-kami  */
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 @media (min-width: 576px) {
   .banner-slider-container-sm,
   .banner-slider-container {
