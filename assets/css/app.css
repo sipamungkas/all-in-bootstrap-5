@@ -166,7 +166,68 @@ main {
   width: 100%;
 }
 
+/* produk detail */
+
+.strikethrough {
+  position: relative;
+}
+
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: var(--color-primary-red);
+
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+h2 .strikethrough {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.detail-pesan-sekarang {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  background-color: var(--color-primary-orange);
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px 1px var(--color-primary-black);
+}
+
+.detail-pesan-sekarang:hover{
+  color: rgba(255, 255, 255, 0.93);
+}
+
+.discount-label {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary-orange);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 2px;
+  top: -1rem;
+}
+
 @media (min-width: 768px) {
+  .discount-label {
+    right: -1rem;
+    top: -1rem;
+  }
 }
 
 .banner-slider-container {
@@ -288,7 +349,6 @@ main {
     width: 100%;
     height: 160px;
   }
-
 }
 
 @media (min-width: 992px) {
