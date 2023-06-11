@@ -78,6 +78,16 @@ body {
   user-select: none;
 }
 
+.h-fit-content{
+  height: fit-content;
+}
+
+.bg-image-png {
+  background-image: url("../../assets/images/bg-01.png");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
 
 #btn-close-image-modal {
   cursor: pointer;
