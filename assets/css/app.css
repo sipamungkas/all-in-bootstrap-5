@@ -291,6 +291,11 @@ h2 .strikethrough {
   background-color: var(--color-primary-orange);
 }
 
+.produk-pesan-sekarang:active {
+  background-color: var(--color-primary-orange) !important;
+  opacity: 80%;
+}
+
 .produk-pesan-wrapper {
   position: absolute;
   bottom: 1rem;
