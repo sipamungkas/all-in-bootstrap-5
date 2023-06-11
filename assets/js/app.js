@@ -1,3 +1,6 @@
+// animasi aos
+AOS.init();
+
 // Update the count down every 1 second
 const countdownDiscountElement = document.getElementById("countdown-discount");
 if (countdownDiscountElement) {
@@ -59,10 +62,17 @@ var addZoom = (target) => {
         yPos = e.clientY - rect.top,
         xPercent = xPos / (container.clientWidth / 100) + "%",
         yPercent = yPos / ((container.clientWidth * ratio) / 100) + "%";
+      let multiplier = 0.6;
+
+      if (img.naturalWidth < 800) {
+        multiplier = 1.2;
+      } else if (img.naturalWidth > 2000) {
+        multiplier = 0.3;
+      }
 
       Object.assign(container.style, {
         backgroundPosition: xPercent + " " + yPercent,
-        backgroundSize: img.naturalWidth * 3 + "px",
+        backgroundSize: img.naturalWidth * multiplier + "px",
       });
     };
 
@@ -79,9 +89,43 @@ var addZoom = (target) => {
 // (C) ATTACH FOLLOW ZOOM
 if (document.getElementById("zoomC")) {
   window.onload = () => addZoom("zoomC");
+  document.body.addEventListener("click", function (event) {
+    if (event.target.className.includes("produk-image-thumbnail")) {
+      const imgSrc = event.target.src;
+      zoomC.style["background-image"] = 'url("' + imgSrc + '")';
+    }
+  });
 }
 
 const disiniElement = document.getElementsByClassName("disini");
 disiniElement[0].addEventListener("click", () => {
   window.location.assign("/hubungi-kami.html");
 });
+
+// change produk image main
+
+// show modal image
+const imageModalEl = document.getElementById("image-modal");
+if (imageModalEl) {
+  const fullImageModal = new bootstrap.Modal(imageModalEl, {
+    keyboard: false,
+  });
+
+  document.body.addEventListener("click", function (event) {
+    if (event.target.className.includes("show-modal-image")) {
+      showImage(event.target.src);
+    }
+
+    if (event.target.id === "btn-close-image-modal") {
+      closeModalImage();
+    }
+  });
+
+  const modalImageSrc = document.getElementById("modal-image-src");
+
+  const showImage = (src) => {
+    modalImageSrc.src = src;
+    fullImageModal.show();
+  };
+  const closeModalImage = () => fullImageModal.hide();
+}
