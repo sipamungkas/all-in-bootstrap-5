@@ -65,7 +65,7 @@ var addZoom = (target) => {
 
       Object.assign(container.style, {
         backgroundPosition: xPercent + " " + yPercent,
-        backgroundSize: img.naturalWidth * 3 + "px",
+        backgroundSize: img.naturalWidth * 0.6 + "px",
       });
     };
 
@@ -82,12 +82,20 @@ var addZoom = (target) => {
 // (C) ATTACH FOLLOW ZOOM
 if (document.getElementById("zoomC")) {
   window.onload = () => addZoom("zoomC");
+  document.body.addEventListener("click", function (event) {
+    if (event.target.className.includes("produk-image-thumbnail")) {
+      const imgSrc = event.target.src;
+      zoomC.style["background-image"] = 'url("' + imgSrc + '")';
+    }
+  });
 }
 
 const disiniElement = document.getElementsByClassName("disini");
 disiniElement[0].addEventListener("click", () => {
   window.location.assign("/hubungi-kami.html");
 });
+
+// change produk image main
 
 // show modal image
 const imageModalEl = document.getElementById("image-modal");

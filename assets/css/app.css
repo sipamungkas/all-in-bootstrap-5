@@ -252,6 +252,22 @@ h2 .strikethrough {
   top: -1rem;
 }
 
+.produk-image-thumbnail-container {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* max-width: 80%; */
+}
+
+.produk-image-thumbnail {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+/* home */
+
 .banner-slider-container {
   margin-right: auto;
   margin-left: auto;
