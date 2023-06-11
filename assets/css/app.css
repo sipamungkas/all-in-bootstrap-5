@@ -90,7 +90,7 @@ body {
   background-position: center;
 }
 
-bg-image-png #btn-close-image-modal {
+#btn-close-image-modal {
   cursor: pointer;
   position: absolute;
   top: 15%;
@@ -98,6 +98,11 @@ bg-image-png #btn-close-image-modal {
   background-color: white;
   padding: 0.5rem;
   border-radius: 100%;
+}
+
+#image-modal #modal-image-src {
+  max-height: 80vh;
+  object-fit: contain;
 }
 
 .show-modal-image {
@@ -303,9 +308,10 @@ h2 .strikethrough {
 
 .portofolio-image {
   width: 100%;
-  height: 180px;
+  /* height: 180px */
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 /* hubungi-kami  */
@@ -391,7 +397,7 @@ h2 .strikethrough {
 
   .portofolio-image {
     width: 100%;
-    height: 160px;
+    /* height: 160px; */
   }
 }
 
@@ -405,7 +411,7 @@ h2 .strikethrough {
 
   .portofolio-image {
     width: 100%;
-    height: 210px;
+    /* height: 210px; */
   }
 
   .langsung-pesan {
@@ -440,6 +446,6 @@ h2 .strikethrough {
 
   .portofolio-image {
     width: 100%;
-    height: 287px;
+    /* height: 287px; */
   }
 }
