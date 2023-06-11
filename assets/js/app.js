@@ -1,3 +1,6 @@
+// animasi aos
+AOS.init();
+
 // Update the count down every 1 second
 const countdownDiscountElement = document.getElementById("countdown-discount");
 if (countdownDiscountElement) {
@@ -85,3 +88,25 @@ const disiniElement = document.getElementsByClassName("disini");
 disiniElement[0].addEventListener("click", () => {
   window.location.assign("/hubungi-kami.html");
 });
+
+// show modal image
+const fullImageModal = new bootstrap.Modal(
+  document.getElementById("image-modal"),
+  {
+    keyboard: false,
+  }
+);
+
+document.body.addEventListener("click", function (event) {
+  if (event.target.className.includes("show-modal-image")) {
+    showImage(event.target.src);
+  }
+});
+
+const modalImageSrc = document.getElementById("modal-image-src");
+
+const showImage = (src) => {
+  modalImageSrc.src = src;
+  fullImageModal.show();
+};
+const closeModalImage = () => fullImageModal.hide();

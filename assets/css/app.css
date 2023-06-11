@@ -13,6 +13,11 @@
   --color-primary-green: #36b24a;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .object-fit-cover {
   object-fit: cover;
 }
@@ -71,6 +76,21 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+
+#btn-close-image-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.show-modal-image {
+  cursor: pointer;
 }
 
 .portofolio-image {
@@ -203,7 +223,7 @@ h2 .strikethrough {
   box-shadow: 0 0 10px 1px var(--color-primary-black);
 }
 
-.detail-pesan-sekarang:hover{
+.detail-pesan-sekarang:hover {
   color: rgba(255, 255, 255, 0.93);
 }
 
@@ -221,13 +241,6 @@ h2 .strikethrough {
   position: absolute;
   right: 2px;
   top: -1rem;
-}
-
-@media (min-width: 768px) {
-  .discount-label {
-    right: -1rem;
-    top: -1rem;
-  }
 }
 
 .banner-slider-container {
@@ -345,6 +358,20 @@ h2 .strikethrough {
     font-size: 3.5rem;
   }
 
+  /* product detail */
+  .discount-label {
+    right: -1rem;
+    top: -1rem;
+  }
+
+  /* portofolio */
+
+  #btn-close-image-modal {
+    top: 8%;
+    right: 6%;
+    padding: 0.8rem;
+  }
+
   .portofolio-image {
     width: 100%;
     height: 160px;
@@ -368,6 +395,7 @@ h2 .strikethrough {
     width: 60%;
   }
 }
+
 @media (min-width: 1200px) {
   .banner-slider-container-xl,
   .banner-slider-container-lg,
@@ -375,6 +403,12 @@ h2 .strikethrough {
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 1200px;
+  }
+
+  #btn-close-image-modal {
+    top: 8%;
+    right: 6%;
+    padding: 0.8rem;
   }
 }
 @media (min-width: 1400px) {
