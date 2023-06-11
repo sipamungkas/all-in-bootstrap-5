@@ -90,23 +90,27 @@ disiniElement[0].addEventListener("click", () => {
 });
 
 // show modal image
-const fullImageModal = new bootstrap.Modal(
-  document.getElementById("image-modal"),
-  {
+const imageModalEl = document.getElementById("image-modal");
+if (imageModalEl) {
+  const fullImageModal = new bootstrap.Modal(imageModalEl, {
     keyboard: false,
-  }
-);
+  });
 
-document.body.addEventListener("click", function (event) {
-  if (event.target.className.includes("show-modal-image")) {
-    showImage(event.target.src);
-  }
-});
+  document.body.addEventListener("click", function (event) {
+    if (event.target.className.includes("show-modal-image")) {
+      showImage(event.target.src);
+    }
 
-const modalImageSrc = document.getElementById("modal-image-src");
+    if (event.target.id === "btn-close-image-modal") {
+      closeModalImage();
+    }
+  });
 
-const showImage = (src) => {
-  modalImageSrc.src = src;
-  fullImageModal.show();
-};
-const closeModalImage = () => fullImageModal.hide();
+  const modalImageSrc = document.getElementById("modal-image-src");
+
+  const showImage = (src) => {
+    modalImageSrc.src = src;
+    fullImageModal.show();
+  };
+  const closeModalImage = () => fullImageModal.hide();
+}
