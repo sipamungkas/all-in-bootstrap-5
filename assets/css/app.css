@@ -90,6 +90,14 @@ body {
   background-position: center;
 }
 
+.bg-image-png-2 {
+  background: url("../../assets/images/bg-01.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #btn-close-image-modal {
   cursor: pointer;
   position: absolute;
