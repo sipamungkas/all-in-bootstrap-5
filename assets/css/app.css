@@ -385,6 +385,10 @@ h2 .strikethrough {
   color: white;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 @media (min-width: 576px) {
   .banner-slider-container-sm,
   .banner-slider-container {
@@ -427,6 +431,11 @@ h2 .strikethrough {
   .portofolio-image {
     width: 100%;
     /* height: 160px; */
+  }
+
+  .small-image {
+    height: 100%;
+    width: 100%;
   }
 }
 
