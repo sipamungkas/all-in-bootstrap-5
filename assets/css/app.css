@@ -293,15 +293,21 @@ h2 .strikethrough {
 }
 
 .banner-slider-image-container img {
-  height: calc((130 / 390) * 100vw);
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.img-keunggulan {
+.img-keunggulan,
+.img-best-seller {
   width: 100%;
 }
+
+.img-best-seller:hover{
+  transform: scale(1.05);
+  transition: ease-in 300ms;
+}
+
 
 #btn-tentang-kami {
   background-color: var(--color-primary-orange);
@@ -454,7 +460,8 @@ h2 .strikethrough {
     font-size: 3.5rem;
   }
 
-  .img-keunggulan {
+  .img-keunggulan,
+  .img-best-seller {
     width: 70%;
   }
 
@@ -496,7 +503,8 @@ h2 .strikethrough {
     max-width: 992px;
   }
 
-  .img-keunggulan {
+  .img-keunggulan,
+  .img-best-seller {
     width: 90%;
   }
 
