@@ -90,6 +90,10 @@ body {
   background-position: center;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* .bg-image-png-2 {
   background: url("../../assets/images/bg-01.png") no-repeat center center;
   -webkit-background-size: cover;
@@ -273,7 +277,6 @@ h2 .strikethrough {
   width: 100px;
   cursor: pointer;
   object-fit: cover;
-  
 }
 
 /* home */
@@ -284,11 +287,32 @@ h2 .strikethrough {
   overflow: hidden;
 }
 
+.banner-slider-image-container.bg-image-png {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .banner-slider-image-container img {
   height: calc((130 / 390) * 100vw);
   width: 100vw;
   object-fit: cover;
   object-position: center;
+}
+
+.img-keunggulan {
+  width: 100%;
+}
+
+#btn-tentang-kami {
+  background-color: var(--color-primary-orange);
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 /* produk css */
@@ -430,6 +454,10 @@ h2 .strikethrough {
     font-size: 3.5rem;
   }
 
+  .img-keunggulan {
+    width: 70%;
+  }
+
   /* product detail */
   .discount-label {
     right: -1rem;
@@ -466,6 +494,10 @@ h2 .strikethrough {
   .banner-slider-container-sm,
   .banner-slider-container {
     max-width: 992px;
+  }
+
+  .img-keunggulan {
+    width: 90%;
   }
 
   .portofolio-image {
