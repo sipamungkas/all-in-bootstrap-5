@@ -90,13 +90,13 @@ body {
   background-position: center;
 }
 
-.bg-image-png-2 {
+/* .bg-image-png-2 {
   background: url("../../assets/images/bg-01.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 #btn-close-image-modal {
   cursor: pointer;
@@ -381,13 +381,19 @@ h2 .strikethrough {
 }
 
 .langsung-pesan:hover {
+  transition: ease-in-out 500ms;
   text-decoration: none;
   color: white;
+  transform: scale(1.005);
 }
 
 .flex-1 {
   flex: 1;
 }
+
+/* #hubungi-kami .container {
+  position: relative;
+} */
 
 @media (min-width: 576px) {
   .banner-slider-container-sm,
@@ -401,9 +407,19 @@ h2 .strikethrough {
   .kami-bantu {
     margin-left: 0px;
   }
+
 }
 
 @media (min-width: 768px) {
+
+  .bg-image-png {
+    background-image: url("../../assets/images/bg-01.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+  }
+
   .banner-slider-container-md,
   .banner-slider-container-sm,
   .banner-slider-container {
@@ -437,6 +453,14 @@ h2 .strikethrough {
     height: 100%;
     width: 100%;
   }
+
+  
+  #hubungi-kami .container {
+    position: relative;
+    top: 25%;
+  }
+
+  
 }
 
 @media (min-width: 992px) {
