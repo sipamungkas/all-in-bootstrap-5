@@ -272,6 +272,8 @@ h2 .strikethrough {
   height: 100px;
   width: 100px;
   cursor: pointer;
+  object-fit: cover;
+  
 }
 
 /* home */
@@ -407,11 +409,9 @@ h2 .strikethrough {
   .kami-bantu {
     margin-left: 0px;
   }
-
 }
 
 @media (min-width: 768px) {
-
   .bg-image-png {
     background-image: url("../../assets/images/bg-01.png");
     width: 100%;
@@ -454,13 +454,10 @@ h2 .strikethrough {
     width: 100%;
   }
 
-  
   #hubungi-kami .container {
     position: relative;
     top: 25%;
   }
-
-  
 }
 
 @media (min-width: 992px) {
