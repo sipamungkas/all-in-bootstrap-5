@@ -303,11 +303,10 @@ h2 .strikethrough {
   width: 100%;
 }
 
-.img-best-seller:hover{
+.img-best-seller:hover {
   transform: scale(1.05);
   transition: ease-in 300ms;
 }
-
 
 #btn-tentang-kami {
   background-color: var(--color-primary-orange);
@@ -410,6 +409,10 @@ h2 .strikethrough {
   color: white;
   font-weight: 600;
   justify-content: center;
+}
+
+.address-container {
+  width: 80%;
 }
 
 .langsung-pesan:hover {
